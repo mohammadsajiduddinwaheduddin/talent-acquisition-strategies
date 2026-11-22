@@ -62,3 +62,22 @@ talent-acquisition-strategies/
         ├── BonusCalculator.vb
         ├── DatabaseHelper.vb
         └── MainMenuForm.vb
+
+
+## Intended Purpose & Scope
+
+**Talent Acquisition Strategies** is an M.B.A. project system designed around banking marketing team operations—covering Business Managers and Business Executives, monthly card targets, bonus point rules, quarterly performance evaluations, branch records, and debit/credit card workflows—built with **VB.NET (Windows Forms, ADO.NET)** and **Microsoft SQL Server**.
+
+> **Note:** The full project report PDF is not included in this repository. Sample records in `database/02_seed_and_queries.sql` use sanitized, generic placeholder names, `@example.com` emails, and synthetic IDs/numbers intended for safe local testing and demonstration.
+
+## Prerequisites
+
+* **Database:** Microsoft SQL Server (with SQL Server Management Studio or `sqlcmd`)
+* **Application Layer:** Visual Studio with .NET / Windows Forms support (for compiling and running the VB.NET forms and modules)
+
+## Setup & Execution Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/mohammadsajiduddinwaheduddin/talent-acquisition-strategies.git](https://github.com/mohammadsajiduddinwaheduddin/talent-acquisition-strategies.git)
+   cd talent-acquisition-strategies
