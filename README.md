@@ -81,7 +81,7 @@ Open the VB.NET source files in Visual Studio, update the SQL Server connection 
  
 ### Accuracy Check Before You Commit
 * Confirm that the database name (`TalentAcquisitionDB`), script file paths (`database/01_create_tables.sql`, `database/02_seed_and_queries.sql`), and VB.NET class/file names match what is actually committed in your repository.
-* Replace `<SERVER_NAME>` in any command examples with clear guidance for the user's own local SQL Server instance, and double-check that no real e⁶mails, phone numbers, card numbers, or connection secrets appear anywhere in your code or docs.
+* Replace `<SERVER_NAME>` in any command examples with clear guidance for the user's own local SQL Server instance, and double-check that no real emails, phone numbers, card numbers, or connection secrets appear anywhere in your code or docs.
 
 ## Database Schema & ER Diagrams
 
