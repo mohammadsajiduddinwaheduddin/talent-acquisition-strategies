@@ -74,14 +74,14 @@ A Windows desktop application design and relational database schema created to a
 4. **Load sanitized sample data and test reporting queries:**
 Execute database/02_seed_and_queries.sql after the schema script completes:
 
-sqlcmd -S <SERVER_NAME> -E -i database/02_seed_and_queries.sql
+   sqlcmd -S <SERVER_NAME> -E -i database/02_seed_and_queries.sql
 
 6. **Configure and run the VB.NET project:**
 Open the VB.NET source files in Visual Studio, update the SQL Server connection string placeholder to point to your local database instance, build the solution, and run the Windows Forms application.
  
 ### Accuracy Check Before You Commit
 * Confirm that the database name (`TalentAcquisitionDB`), script file paths (`database/01_create_tables.sql`, `database/02_seed_and_queries.sql`), and VB.NET class/file names match what is actually committed in your repository.
-* Replace `<SERVER_NAME>` in any command examples with clear guidance for the user's own local SQL Server instance, and double-check that no real emails, phone numbers, card numbers, or connection secrets appear anywhere in your code or docs.
+* Replace `<SERVER_NAME>` in any command examples with clear guidance for the user's own local SQL Server instance, and double-check that no real e⁶mails, phone numbers, card numbers, or connection secrets appear anywhere in your code or docs.
 
 ## Repository Structure
 ```text
