@@ -5,7 +5,7 @@ A Windows desktop application design and relational database schema created to a
 ## Academic & Project Metadata
 - **Project Title:** Talent Acquisition Strategies
 - **Degree:** Master of Business Administration (M.B.A.)
-- **Institution:** Affiliated to Osmania University, Approved by AICTE
+- **Institution:** Osmania University, Approved by AICTE
 - **Academic Year:**
 - **Project Guidance / Organization:**
 - **Development Methodology:** Rapid Application Development (RAD) model with emphasis on reliability, input validation, error handling, and maintainability
@@ -30,7 +30,7 @@ A Windows desktop application design and relational database schema created to a
 
 ### 1. Employee Recruitment & Performance Evaluation
 - **Hierarchy:** Marketing teams are structured around **Business Managers** and **Business Executives**.
-- **Recruitment & Confirmation (`EXE_APP`, `EXE_CONFIRM`):** Captures applicant details (application number, date, personal details, applied post, qualification, experience, address, contact info) and records confirmation status, designation, executive code, confirmation date, joining date, basic salary, branch code, reporting manager code, and confirmation flag[cite:
+- **Recruitment & Confirmation (`EXE_APP`, `EXE_CONFIRM`):** Captures applicant details (application number, date, personal details, applied post, qualification, experience, address, contact info) and records confirmation status, designation, executive code, confirmation date, joining date, basic salary, branch code, reporting manager code, and confirmation flag
 - **Monthly Targets & Bonus Points (`EXE_TARGET`):** Tracks monthly card targets (`Target_Cards`), actual cards sold (`Noc`), extra cards (`Extra_Cards`), pending cards (`Noc_Pending`), and bonus points (`Bonus_pts`).
   - **Business Executives:** Bonus points are awarded based on monthly target achievement and extra cards sold (e.g., 1 point for achieving target, 2 points per 2 extra cards, and 0 points if cards are pending).
   - **Business Managers:** Evaluated around team target achievement across subordinates under their manager code plus their own card output, with 0 points if targets/cards remain pending.
