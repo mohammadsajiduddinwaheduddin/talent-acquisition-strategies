@@ -1,1 +1,20 @@
+# Visual Studio / .NET build outputs
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.vspscc
+*.vssscc
+.vs/
 
+# SQL Server local database and backup files
+*.mdf
+*.ldf
+*.ndf
+*.bak
+
+# OS and editor temporary files
+Thumbs.db
+.DS_Store
+*~
