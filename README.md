@@ -68,13 +68,15 @@ A Windows desktop application design and relational database schema created to a
 
 2. **Create the database and tables:**
    Run database/01_create_tables.sql in SQL Server Management Studio or via sqlcmd (update <SERVER_NAME> and authentication flags to match your local SQL Server instance):
-sqlcmd -S <SERVER_NAME> -E -i database/01_create_tables.sql
 
-3. **Load sanitized sample data and test reporting queries:**
+   sqlcmd -S <SERVER_NAME> -E -i database/01_create_tables.sql
+
+4. **Load sanitized sample data and test reporting queries:**
 Execute database/02_seed_and_queries.sql after the schema script completes:
+
 sqlcmd -S <SERVER_NAME> -E -i database/02_seed_and_queries.sql
 
-4. **Configure and run the VB.NET project:**
+6. **Configure and run the VB.NET project:**
 Open the VB.NET source files in Visual Studio, update the SQL Server connection string placeholder to point to your local database instance, build the solution, and run the Windows Forms application.
  
 ### Accuracy Check Before You Commit
@@ -84,7 +86,7 @@ Open the VB.NET source files in Visual Studio, update the SQL Server connection 
 ## Repository Structure
 ```text
 talent-acquisition-strategies/
-├── README.md
+├── README.md.
 ├── .gitignore
 ├── docs/
 │   └── TAS.pdf
