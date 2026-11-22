@@ -24,7 +24,7 @@ A Windows desktop application design and relational database schema created to a
 - **Application Type:** Windows GUI Desktop Application (Windows Forms / MDI interface).
 - **Frontend & Data Access:** VB.NET (Visual Studio 2008 / .NET Framework) with ADO.NET (`SqlConnection`, `SqlCommand`, `SqlDataReader`, `SqlDataAdapter`, `DataSet`)
 - **Database:** Microsoft SQL Server (relational tables, primary/foreign keys, referential integrity, and normalization up to Third Normal Form / 3NF).
-- **Target Hardware & OS Baseline (from Report): * Windows NT 4 / 2000 / XP, SQL Server 2005 / Visual Studio .NET 2008, Pentium III (500 MHz+) or above, 128 MB RAM+, 100 MB+ free disk space, and network connectivity for branch access.
+- **Target Hardware & OS Baseline (from Report):** Windows NT 4 / 2000 / XP, SQL Server 2005 / Visual Studio .NET 2008, Pentium III (500 MHz+) or above, 128 MB RAM+, 100 MB+ free disk space, and network connectivity for branch access.
 
 ## Core Modules & Business Rules
 
