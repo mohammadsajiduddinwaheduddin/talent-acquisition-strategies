@@ -83,10 +83,20 @@ Open the VB.NET source files in Visual Studio, update the SQL Server connection 
 * Confirm that the database name (`TalentAcquisitionDB`), script file paths (`database/01_create_tables.sql`, `database/02_seed_and_queries.sql`), and VB.NET class/file names match what is actually committed in your repository.
 * Replace `<SERVER_NAME>` in any command examples with clear guidance for the user's own local SQL Server instance, and double-check that no real e⁶mails, phone numbers, card numbers, or connection secrets appear anywhere in your code or docs.
 
+## Database Schema & ER Diagrams
+
+The relational model spans *13 tables* across Executive/Branch management, Debit Card operations, and Credit Card lifecycle/billing workflows, aligned with database/01_create_tables.sql and sanitized sample data in database/02_seed_and_queries.sql:
+
+* *Full Schema (assets/er-full-schema.png):* BRANCH, EXE_APP (using Name), EXE_CONFIRM (including BmgrNo manager reference and BRANCH_CODE), EXE_TARGET, EXE_PERFORMANCE, DEBITCARD_APP, DEBIT_CARD, DC_TRANS, CREDITCARD_APP, CC_ENQUIRY, CREDIT_CARD, CC_TRANS, and BILLS.
+* *Credit Card Sub-Schema (assets/er-credit-card.png):* Focuses on CREDITCARD_APP, CC_ENQUIRY, CREDIT_CARD, and CC_TRANS.
+
+![Full 13-Table ER Diagram](assets/er-full-schema.pdf)
+![Credit Card Sub-Schema ER Diagram](assets/er-credit-card.pdf)
+
 ## Repository Structure
 ```text
 talent-acquisition-strategies/
-├── README.md.
+├── README.md
 ├── .gitignore
 ├── docs/
 │   └── TAS.pdf
