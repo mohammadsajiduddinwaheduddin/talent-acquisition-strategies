@@ -48,22 +48,6 @@ A Windows desktop application design and relational database schema created to a
 - **Card Issuance & Transactions:** Stores issued credit card number, issue date, credit limit, current credit amount (not exceeding the credit limit), card scheme type (such as Classic or Gold), maintenance charge, yearly rent, and rent payment date, alongside transaction records (transaction date, amount, operation type `0-Enquiry`, `1-Cash`, `2-Misc`, and interest amount).
 - **Monthly Billing (`BILLS`):** Tracks monthly bill number, linked transaction/card number, bill date, due date, bill amount, amount paid, and clearance status (`CLEARED` / `NOT CLEARED`), accounting for interest after the due date.
 
-## Repository Structure
-```text
-talent-acquisition-strategies/
-├── README.md
-├── .gitignore
-├── docs/
-│   └── TAS.pdf
-├── database/
-│   └── 01_create_tables.sql
-└── src/
-    └── TalentAcquisitionStrategies/
-        ├── BonusCalculator.vb
-        ├── DatabaseHelper.vb
-        └── MainMenuForm.vb
-
-
 ## Intended Purpose & Scope
 
 **Talent Acquisition Strategies** is an M.B.A. project system designed around banking marketing team operations—covering Business Managers and Business Executives, monthly card targets, bonus point rules, quarterly performance evaluations, branch records, and debit/credit card workflows—built with **VB.NET (Windows Forms, ADO.NET)** and **Microsoft SQL Server**.
@@ -81,3 +65,19 @@ talent-acquisition-strategies/
    ```bash
    git clone [https://github.com/mohammadsajiduddinwaheduddin/talent-acquisition-strategies.git](https://github.com/mohammadsajiduddinwaheduddin/talent-acquisition-strategies.git)
    cd talent-acquisition-strategies
+
+
+## Repository Structure
+```text
+talent-acquisition-strategies/
+├── README.md
+├── .gitignore
+├── docs/
+│   └── TAS.pdf
+├── database/
+│   └── 01_create_tables.sql
+└── src/
+    └── TalentAcquisitionStrategies/
+        ├── BonusCalculator.vb
+        ├── DatabaseHelper.vb
+        └── MainMenuForm.vb
