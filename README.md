@@ -24,7 +24,7 @@ A Windows desktop application design and relational database schema created to a
 - **Application Type:** Windows GUI Desktop Application (Windows Forms / MDI interface).
 - **Frontend & Data Access:** VB.NET (Visual Studio 2008 / .NET Framework) with ADO.NET (`SqlConnection`, `SqlCommand`, `SqlDataReader`, `SqlDataAdapter`, `DataSet`)
 - **Database:** Microsoft SQL Server (relational tables, primary/foreign keys, referential integrity, and normalization up to Third Normal Form / 3NF).
-- **Target Hardware & OS Baseline (from Report):** Windows NT 4 / 2000 / XP, SQL Server 2005 / Visual Studio .NET 2008, Pentium III (500 MHz+) or above, 128 MB RAM+, 100 MB+ free disk space, and network connectivity for branch access.
+- **Target Hardware & OS Baseline (from Report): * Windows NT 4 / 2000 / XP, SQL Server 2005 / Visual Studio .NET 2008, Pentium III (500 MHz+) or above, 128 MB RAM+, 100 MB+ free disk space, and network connectivity for branch access.
 
 ## Core Modules & Business Rules
 
@@ -66,6 +66,20 @@ A Windows desktop application design and relational database schema created to a
    git clone [https://github.com/mohammadsajiduddinwaheduddin/talent-acquisition-strategies.git](https://github.com/mohammadsajiduddinwaheduddin/talent-acquisition-strategies.git)
    cd talent-acquisition-strategies
 
+2. **Create the database and tables:**
+   Run database/01_create_tables.sql in SQL Server Management Studio or via sqlcmd (update <SERVER_NAME> and authentication flags to match your local SQL Server instance):
+sqlcmd -S <SERVER_NAME> -E -i database/01_create_tables.sql
+
+3. **Load sanitized sample data and test reporting queries:**
+Execute database/02_seed_and_queries.sql after the schema script completes:
+sqlcmd -S <SERVER_NAME> -E -i database/02_seed_and_queries.sql
+
+4. **Configure and run the VB.NET project:**
+Open the VB.NET source files in Visual Studio, update the SQL Server connection string placeholder to point to your local database instance, build the solution, and run the Windows Forms application.
+ 
+### Accuracy Check Before You Commit
+* Confirm that the database name (`TalentAcquisitionDB`), script file paths (`database/01_create_tables.sql`, `database/02_seed_and_queries.sql`), and VB.NET class/file names match what is actually committed in your repository.
+* Replace `<SERVER_NAME>` in any command examples with clear guidance for the user's own local SQL Server instance, and double-check that no real emails, phone numbers, card numbers, or connection secrets appear anywhere in your code or docs.
 
 ## Repository Structure
 ```text
